@@ -1,3 +1,6 @@
+<?php 
+    $today = date("m\ \/\ d\ \/\ yy"); 
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +10,7 @@
 </head>
 <body>
     <p>
-
+        <?= $today ?>
     </p>
 </body>
 </html>
