@@ -1,6 +1,6 @@
 <?php 
     setlocale (LC_TIME, 'fr_FR.utf8','fra'); 
-    $today = (strftime("%A %d %B")); 
+    $today = strftime('%A %d %B'); 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
