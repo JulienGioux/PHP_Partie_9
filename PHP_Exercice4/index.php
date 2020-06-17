@@ -6,8 +6,6 @@
     function fraStrDate($U) {
         return strftime('%A %d %B %Y, %R', $U -> format('U'));
     }
-    var_dump($today_Obj);
-    var_dump($pastDay_Obj);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
