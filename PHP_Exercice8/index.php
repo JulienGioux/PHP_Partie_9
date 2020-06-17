@@ -20,7 +20,8 @@
 </head>
 <body>
     <p>
-    <?= 'Il y a 22 jours nous étions le : ' . fraStrDate($date);?>
+    Il y a 22 jours nous étions le : 
+    <?= fraStrDate($date);?>
     </p>
 </body>
 </html>

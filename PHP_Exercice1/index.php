@@ -1,5 +1,6 @@
 <?php 
-    $today = date("m\ \/\ d\ \/\ yy"); 
+    $today = date('d\ \/\ m\ \/\ yy');
+    $today2 = new dateTime();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,6 +12,8 @@
 <body>
     <p>
         <?= $today ?>
+        <br>
+        <?= $today2 -> format('d / m / yy') ?>
     </p>
 </body>
 </html>

@@ -1,11 +1,13 @@
 <?php
     date_default_timezone_set('Europe/Paris');
     setlocale(LC_TIME, 'french.UTF-8, fr-FR.UTF-8', 'fr.UTF-8', 'fra.UTF-8', 'fr_FR.UTF-8');
-    $today = new DateTime(); 
-    $pastDay = new DateTime('2016-08-02 15:00:00');
+    $today_Obj = new DateTime(); 
+    $pastDay_Obj = new DateTime('2016-08-02 15:00:00');
     function fraStrDate($U) {
         return strftime('%A %d %B %Y, %R', $U -> format('U'));
     }
+    var_dump($today_Obj);
+    var_dump($pastDay_Obj);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,14 +18,14 @@
 </head>
 <body>
     <p>
-        <?= $today -> format('U = Y-m-d H:i:s') ?>
+        <?= $today_Obj -> format('U = Y-m-d H:i:s') ?>
         <br>
-        <?= fraStrDate($today) ?>
+        <?= fraStrDate($today_Obj) ?>
     </p>
     <p>
-        <?= $pastDay -> format('U = Y-m-d H:i:s') ?>
+        <?= $pastDay_Obj -> format('U = Y-m-d H:i:s') ?>
         <br>
-        <?= fraStrDate($pastDay) ?>
+        <?= fraStrDate($pastDay_Obj) ?>
     </p>
 </body>
 </html>
